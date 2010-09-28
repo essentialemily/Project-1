@@ -1,0 +1,128 @@
+/*
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.8.1
+
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
+*/
+
+body
+{
+	font-family: Helvetica, Arial, sans-serif;
+	background: rgb(255,250,240);
+	color: rgb(0,0,60);
+}
+
+a,a:link { text-decoration: none; color: black; font-size: small; }
+a:visited { text-decoration: none; color: gray; font-size: small; }
+a:hover, a:focus, a:active { text-decoration: underline; color: blue; font-size: small; }
+
+a.inline-link
+{
+	font-weight: normal;
+	font-size: inherit;
+}
+
+div#header /* sidebar location*/
+{
+	position: fixed;
+	left: 50px;
+	top: 180px;
+	width: 300px;
+}
+
+h1 /* name appearance */
+ {
+	font-family: "Batik Regular","Blackadder ITC", "Australian Sunrise", "Weltron Urban", "Reprise Title", monospace;
+	font-size: xx-large;
+	font-weight: bold;
+	color: rgb(0,0,60); /* dark blue */
+	text-align: left;
+	line-height: 0;
+}
+
+ol.address li
+{
+	display: block;
+	font-size: small;
+	color: rgb(0,0,60); /* dark blue */
+	text-align: left;
+	text-indent: -40px; /* Not sure what default setting moves it right 40px, but I'd like to find it instead of using this hack */
+}
+
+.current-page /* current page title in the nav bar */
+{
+	color: rgb(0,0,60); font-size: small; font-style: italic; font-weight: bold;  
+}
+
+p.blurb
+{
+padding-left: 50px;
+font-size: small;
+}
+
+.resume, .portfolio /*location of main page content*/
+{
+	margin-left: 450px;
+	padding: 0px 0px 0px 0px;
+	width: 590px;
+	border-bottom: 3px solid rgb(0,0,60); /* dark blue */
+}
+
+h2 /*section headings */
+{
+	position: relative;
+	right: 50px;
+	padding: 3px 0px 4px 5px;
+	width: 635px;
+	color: rgb(255,255,255);
+	font-weight: bold;
+	font-size: small;
+	background: rgb(0,0,60); /* dark blue */
+	text-indent: 0px;
+	text-shadow: 2px 2px 1px rgb(235,190,35); /* gold shadow*/
+}
+
+h3 /*Employer or school*/
+{
+	font-family: "Perpetua Titling MT", serif;
+	text-transform: uppercase;
+	font-size: medium;
+	font-weight: normal;
+	text-indent: 0px;
+}
+
+h4 /* job title */
+{
+	color: rgb(0,0,60); /* dark blue */
+	font-size: small;
+}
+
+ul
+{
+	list-style-type: square;
+	font-size: small;
+}
+
+.date /* formatting dates*/
+{
+	float: right;
+	position: relative;
+	right: 620px;
+	color: rgb(235,190,35); /*gold*/
+	font-weight: bold;
+	font-style: italic;
+}
+
+.no-border /* images without a natural border*/
+{
+border: 2px solid black;
+}
+
+div#footer
+{
+	font-size: small;
+	color: rgb(0,0,60); /* dark blue */
+	padding-left: 50px;
+}
