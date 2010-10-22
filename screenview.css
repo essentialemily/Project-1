@@ -1,7 +1,11 @@
+html
+{
+	background: rgb(255,250,240);
+}
+
 body
 {
 	font-family: Helvetica, Arial, sans-serif;
-	background: rgb(255,250,240);
 	color: rgb(0,0,60);
 }
 
