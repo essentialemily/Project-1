@@ -9,7 +9,7 @@ body
 	color: rgb(0,0,60);
 }
 
-a,a:link { text-decoration: none; color: black;}
+a,a:link { text-decoration: none; color: rgb(0,0,60);}
 a:visited { text-decoration: none; color: gray;}
 a:hover, a:focus, a:active { text-decoration: underline; color: blue;}
 
