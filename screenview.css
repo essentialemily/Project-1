@@ -29,7 +29,6 @@ h1 /* name appearance */
 	font-weight: bold;
 	color: rgb(0,0,60); /* dark blue */
 	text-align: left;
-	line-height: 0;
 }
 
 ol.address li
@@ -38,7 +37,6 @@ ol.address li
 	font-size: small;
 	color: rgb(0,0,60); /* dark blue */
 	text-align: left;
-	text-indent: -40px; /* Not sure what default setting moves it right 40px, but I'd like to find it instead of using this hack */
 }
 
 .current-page /* current page title in the nav bar */
