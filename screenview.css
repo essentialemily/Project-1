@@ -17,6 +17,11 @@ div#header /* sidebar location*/
 	width: 300px;
 }
 
+div#header p a
+{
+	font-size: small;
+}
+
 h1 /* name appearance */
  {
 	font-family: "Batik Regular","Blackadder ITC", "Australian Sunrise", "Weltron Urban", "Reprise Title", monospace;
@@ -38,7 +43,7 @@ ol.address li
 
 .current-page /* current page title in the nav bar */
 {
-	color: rgb(0,0,60); font-size: small; font-style: italic; font-weight: bold;  
+	color: rgb(0,0,60); font-style: italic; font-weight: bold;  
 }
 
 p.blurb
