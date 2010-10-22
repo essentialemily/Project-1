@@ -5,15 +5,9 @@ body
 	color: rgb(0,0,60);
 }
 
-a,a:link { text-decoration: none; color: black; font-size: small; }
-a:visited { text-decoration: none; color: gray; font-size: small; }
-a:hover, a:focus, a:active { text-decoration: underline; color: blue; font-size: small; }
-
-a.inline-link
-{
-	font-weight: normal;
-	font-size: inherit;
-}
+a,a:link { text-decoration: none; color: black;}
+a:visited { text-decoration: none; color: gray;}
+a:hover, a:focus, a:active { text-decoration: underline; color: blue;}
 
 div#header /* sidebar location*/
 {
