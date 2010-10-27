@@ -26,6 +26,19 @@ div#header p a
 	font-size: small;
 }
 
+div#navigation/* sidebar location*/
+{
+	position: fixed;
+	left: 50px;
+	top: 220px;
+	width: 300px;
+}
+
+div#navigation p a
+{
+	font-size: small;
+}
+
 h1 /* name appearance */
  {
 	font-family: "Batik Regular","Blackadder ITC", "Australian Sunrise", "Weltron Urban", "Reprise Title", monospace;
