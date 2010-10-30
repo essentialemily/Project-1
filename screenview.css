@@ -39,6 +39,20 @@ div#navigation p a
 	font-size: small;
 }
 
+ul#portfolio-navigation
+{
+position: absolute;
+top: 500px;
+left: 300px;
+}
+
+ul#portfolio-navigation li
+{
+width: 150px;
+float: left;
+}
+
+
 h1 /* name appearance */
  {
 	font-family: "Batik Regular","Blackadder ITC", "Australian Sunrise", "Weltron Urban", "Reprise Title", monospace;
