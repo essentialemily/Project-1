@@ -90,9 +90,9 @@ font-size: small;
 
 .resume /*location of main page content*/
 {
-	margin-left: 450px;
+	margin-left: 400px;
 	padding: 0px 0px 0px 0px;
-	width: 590px;
+	width: 600px;
 	border-bottom: 3px solid rgb(0,0,60); /* dark blue */
 }
 
