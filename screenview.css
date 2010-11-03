@@ -88,7 +88,7 @@ p.blurb
 font-size: small;
 }
 
-.resume, /*location of main page content*/
+.resume /*location of main page content*/
 {
 	margin-left: 450px;
 	padding: 0px 0px 0px 0px;
