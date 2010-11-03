@@ -98,15 +98,12 @@ font-size: small;
 
 h2 /*section headings */
 {
-	position: relative;
-	right: 50px;
 	padding: 3px 0px 4px 5px;
 	width: 635px;
 	color: rgb(255,255,255);
 	font-weight: bold;
 	font-size: small;
 	background: rgb(0,0,60); /* dark blue */
-	text-indent: 0px;
 }
 
 h3 /*Employer or school*/
