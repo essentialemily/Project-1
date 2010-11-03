@@ -142,7 +142,7 @@ ul
 
 .no-border /* images without a natural border*/
 {
-border: 2px solid black;
+border: 1px solid black;
 }
 
 div#footer
