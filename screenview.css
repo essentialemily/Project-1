@@ -39,10 +39,11 @@ div#navigation p a
 	font-size: small;
 }
 
-.portfolio
+.portfolio, #content
 {
     width: 800px;
-    margin-left: 300px;
+    margin-left: 200px;
+	margin-right: 200px;
 	border-bottom: 3px solid rgb(0,0,60); /* dark blue */
 }
 
