@@ -26,7 +26,7 @@ div#navigation /* sidebar location*/
 	color: rgb(0,0,60); font-style: italic; font-weight: bold; font-size: small;
 }
 
-#content, .portfolio, ul#portfolio-navigation, #header /* location of main page content*/
+#content, .portfolio, ul#portfolio-navigation, #header /* horizontal positioning of main page content, header, and portfolio nav*/
 {
     margin-left: 200px;
 	margin-right: 200px;
@@ -37,6 +37,12 @@ div#navigation /* sidebar location*/
  
 .portfolio, ul#portfolio-navigation
 {    min-width: 800px;}
+
+#content, .portfolio  /* main page content*/
+{
+background: white;
+padding: 10px;
+}
 
 .portfolio, #content /*bottom border on main page content*/
 {
@@ -61,6 +67,7 @@ h1 /*name appearance in header*/
 	text-align: left;
 	padding-top: 1em;
 	padding-bottom: 1em;
+	padding-left: 10px;
 	background: rgb(0,0,60); /* dark blue */
 }
 
