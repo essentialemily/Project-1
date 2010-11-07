@@ -44,7 +44,7 @@ div#links /* right-hand sidebar location*/
  {   min-width: 300px;}
  
 .portfolio, ul#portfolio-navigation
-{    min-width: 800px;}
+{width: 800px;}
 
 #content
 {
@@ -65,8 +65,10 @@ padding: 5px;
 float: left;
 }
 
+ul#portfolio-navigation li
+{background: rgb(0,0,60);} /* dark blue */
 
-h1 /*name appearance in header*/
+h1 /*header appearance*/
  {
 	font-family: "Batik Regular","Blackadder ITC", "Australian Sunrise", "Weltron Urban", "Reprise Title", monospace;
 	font-size: xx-large;
