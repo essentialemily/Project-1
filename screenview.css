@@ -39,25 +39,23 @@ div#navigation p a
 	font-size: small;
 }
 
-.portfolio, #content
+.portfolio, #content, ul#portfolio-navigation
 {
     width: 800px;
     margin-left: 200px;
 	margin-right: 200px;
-	border-bottom: 3px solid rgb(0,0,60); /* dark blue */
 }
 
-ul#portfolio-navigation
+.portfolio, #content
 {
-position: absolute;
-top: 500px;
-left: 300px;
+	border-bottom: 3px solid rgb(0,0,60); /* dark blue */
 }
 
 ul#portfolio-navigation li
 {
 width: 150px;
-padding-right: 10px;
+height: 150px;
+padding: 5px;
 float: left;
 }
 
