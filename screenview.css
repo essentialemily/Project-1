@@ -68,7 +68,7 @@ float: left;
 ul#portfolio-navigation li
 {background: rgb(0,0,60);} /* dark blue */
 
-h1 /*header appearance*/
+#header/*header appearance*/
  {
 	font-family: "Batik Regular","Blackadder ITC", "Australian Sunrise", "Weltron Urban", "Reprise Title", monospace;
 	font-size: xx-large;
@@ -78,6 +78,7 @@ h1 /*header appearance*/
 	padding-top: 1em;
 	padding-bottom: 1em;
 	padding-left: 10px;
+	padding-right: 10px;
 	background: rgb(0,0,60); /* dark blue */
 }
 
