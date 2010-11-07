@@ -26,18 +26,17 @@ div#navigation /* sidebar location*/
 	color: rgb(0,0,60); font-style: italic; font-weight: bold; font-size: small;
 }
 
-#content/* location of main page content*/
+#content, .portfolio, ul#portfolio-navigation /* location of main page content*/
 {
-    min-width: 300px;
     margin-left: 200px;
 	margin-right: 200px;
 }
-.portfolio, ul#portfolio-navigation /* location of main page content on portfolio pages*/
-{
-    width: 800px;
-    margin-left: 200px;
-}
 
+#content 
+ {   min-width: 300px;}
+ 
+.portfolio, ul#portfolio-navigation
+{    min-width: 800px;}
 
 .portfolio, #content /*bottom border on main page content*/
 {
@@ -58,8 +57,13 @@ h1 /*name appearance in header*/
 	font-family: "Batik Regular","Blackadder ITC", "Australian Sunrise", "Weltron Urban", "Reprise Title", monospace;
 	font-size: xx-large;
 	font-weight: bold;
-	color: rgb(0,0,60); /* dark blue */
+	color: white;
 	text-align: left;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-left: 200px;
+	margin-right: 200px;
+	background: rgb(0,0,60); /* dark blue */
 }
 
 p.blurb
