@@ -52,9 +52,11 @@ background: white;
 padding: 10px;
 }
 
-.portfolio, #content /*bottom border on main page content*/
+#content /*borders on main page content*/
 {
-	border-bottom: 3px solid rgb(0,0,60); /* dark blue */
+	border-left: 1px solid rgb(0,0,60); /* dark blue */
+	border-right: 1px solid rgb(0,0,60);
+	border-bottom: 3px solid rgb(0,0,60);
 }
 
 ul#portfolio-navigation li /*horizontal portfolio nav bar positioning*/
