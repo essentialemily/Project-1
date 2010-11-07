@@ -13,45 +13,42 @@ a,a:link { text-decoration: none; color: rgb(0,0,60);}
 a:visited { text-decoration: none; color: gray;}
 a:hover, a:focus, a:active { text-decoration: underline; color: blue;}
 
-.address /* sidebar location*/
+.address /* sidebar location and address styling*/
 {
 	position: fixed;
 	left: 50px;
 	top: 180px;
 	width: 300px;
-}
-
-div#header p a
-{
 	font-size: small;
+	color: rgb(0,0,60); /* dark blue */
 }
 
-div#navigation/* sidebar location*/
+div#navigation /* sidebar location*/
 {
-	position: fixed;
+	position: absolute;
 	left: 50px;
 	top: 220px;
 	width: 300px;
 }
 
-div#navigation p a
+.current-page /* current page title in the nav bar */
 {
-	font-size: small;
+	color: rgb(0,0,60); font-style: italic; font-weight: bold; font-size: small;
 }
 
-.portfolio, #content, ul#portfolio-navigation
+.portfolio, #content, ul#portfolio-navigation /* location of main page content*/
 {
     width: 800px;
     margin-left: 200px;
 	margin-right: 200px;
 }
 
-.portfolio, #content
+.portfolio, #content /*bottom border on main page content*/
 {
 	border-bottom: 3px solid rgb(0,0,60); /* dark blue */
 }
 
-ul#portfolio-navigation li
+ul#portfolio-navigation li /*horizontal portfolio nav bar positioning*/
 {
 width: 150px;
 height: 150px;
@@ -60,26 +57,13 @@ float: left;
 }
 
 
-h1 /* name appearance */
+h1 /*name appearance in header*/
  {
 	font-family: "Batik Regular","Blackadder ITC", "Australian Sunrise", "Weltron Urban", "Reprise Title", monospace;
 	font-size: xx-large;
 	font-weight: bold;
 	color: rgb(0,0,60); /* dark blue */
 	text-align: left;
-}
-
-ol.address li
-{
-	display: block;
-	font-size: small;
-	color: rgb(0,0,60); /* dark blue */
-	text-align: left;
-}
-
-.current-page /* current page title in the nav bar */
-{
-	color: rgb(0,0,60); font-style: italic; font-weight: bold; font-size: small;
 }
 
 p.blurb
