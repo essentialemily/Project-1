@@ -46,7 +46,7 @@ div#links /* right-hand sidebar location*/
 .portfolio, ul#portfolio-navigation
 {    min-width: 800px;}
 
-#content, .portfolio  /* main page content*/
+#content
 {
 background: white;
 padding: 10px;
