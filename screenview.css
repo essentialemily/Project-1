@@ -26,12 +26,18 @@ div#navigation /* sidebar location*/
 	color: rgb(0,0,60); font-style: italic; font-weight: bold; font-size: small;
 }
 
-.portfolio, #content, ul#portfolio-navigation /* location of main page content*/
+#content/* location of main page content*/
 {
-    width: 800px;
+    min-width: 300px;
     margin-left: 200px;
 	margin-right: 200px;
 }
+.portfolio, ul#portfolio-navigation /* location of main page content on portfolio pages*/
+{
+    width: 800px;
+    margin-left: 200px;
+}
+
 
 .portfolio, #content /*bottom border on main page content*/
 {
