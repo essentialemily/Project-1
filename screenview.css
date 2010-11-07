@@ -21,14 +21,29 @@ div#navigation /* left-hand sidebar location*/
 	width: 140px;
 }
 
-div#links /* right-hand sidebar location*/
+ul#links /* right-hand sidebar location*/
 {
 	position: absolute;
 	right: 0px;
 	top: 105px;
 	width: 140px;
+	list-style-type: square; /* doesn't work*/
 }
 
+ul
+	{font-size: small;}
+
+ul#links li
+{
+margin-bottom: 5px;
+}
+
+ul#links > li > ul > li
+{
+margin-bottom: 0px;
+padding-left: 10px;
+}
+	
 .current-page /* current page title in the nav bar */
 {
 	color: rgb(0,0,60); font-style: italic; font-weight: bold; font-size: small;
@@ -110,12 +125,6 @@ h3 /*Employer or school*/
 h4 /* job title */
 {
 	color: rgb(0,0,60); /* dark blue */
-	font-size: small;
-}
-
-ul
-{
-	list-style-type: square;
 	font-size: small;
 }
 
