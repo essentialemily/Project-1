@@ -26,13 +26,13 @@ div#navigation /* sidebar location*/
 	color: rgb(0,0,60); font-style: italic; font-weight: bold; font-size: small;
 }
 
-#content, .portfolio, ul#portfolio-navigation /* location of main page content*/
+#content, .portfolio, ul#portfolio-navigation, #header /* location of main page content*/
 {
     margin-left: 200px;
 	margin-right: 200px;
 }
 
-#content 
+#content, #header 
  {   min-width: 300px;}
  
 .portfolio, ul#portfolio-navigation
@@ -61,8 +61,6 @@ h1 /*name appearance in header*/
 	text-align: left;
 	padding-top: 1em;
 	padding-bottom: 1em;
-	margin-left: 200px;
-	margin-right: 200px;
 	background: rgb(0,0,60); /* dark blue */
 }
 
