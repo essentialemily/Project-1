@@ -13,39 +13,15 @@ a,a:link { text-decoration: none; color: rgb(0,0,60);}
 a:visited { text-decoration: none; color: gray;}
 a:hover, a:focus, a:active { text-decoration: underline; color: blue;}
 
-div#navigation /* sidebar location*/
+.address /* sidebar location and address styling*/
 {
-	position: absolute;
+	position: fixed;
 	left: 50px;
-	top: 220px;
+	top: 180px;
 	width: 300px;
+	font-size: small;
+	color: rgb(0,0,60); /* dark blue */
 }
-
-.current-page /* current page title in the nav bar */
-{
-	color: rgb(0,0,60); font-style: italic; font-weight: bold; font-size: small;
-}
-
-.portfolio, #content, ul#portfolio-navigation /* location of main page content*/
-{
-    width: 800px;
-    margin-left: 200px;
-	margin-right: 200px;
-}
-
-.portfolio, #content /*bottom border on main page content*/
-{
-	border-bottom: 3px solid rgb(0,0,60); /* dark blue */
-}
-
-ul#portfolio-navigation li /*horizontal portfolio nav bar positioning*/
-{
-width: 150px;
-height: 150px;
-padding: 5px;
-float: left;
-}
-
 
 h1 /*name appearance in header*/
  {
@@ -56,9 +32,12 @@ h1 /*name appearance in header*/
 	text-align: left;
 }
 
-p.blurb
+.resume /*location of main page content*/
 {
-font-size: small;
+	margin-left: 400px;
+	padding: 0px 0px 0px 0px;
+	width: 600px;
+	border-bottom: 3px solid rgb(0,0,60); /* dark blue */
 }
 
 h2 /*section headings */
@@ -91,9 +70,14 @@ ul
 	font-size: small;
 }
 
-.no-border /* images without a natural border*/
+.date /* formatting dates*/
 {
-border: 1px solid black;
+	float: right;
+	position: relative;
+	right: 620px;
+	color: rgb(235,190,35); /*gold*/
+	font-weight: bold;
+	font-style: italic;
 }
 
 div#footer
@@ -102,4 +86,3 @@ div#footer
 	color: rgb(0,0,60); /* dark blue */
 	padding-left: 50px;
 }
-
