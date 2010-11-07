@@ -13,12 +13,20 @@ a,a:link { text-decoration: none; color: rgb(0,0,60);}
 a:visited { text-decoration: none; color: gray;}
 a:hover, a:focus, a:active { text-decoration: underline; color: blue;}
 
-div#navigation /* sidebar location*/
+div#navigation /* left-hand sidebar location*/
 {
 	position: absolute;
 	left: 60px;
 	top: 105px;
-	width: 300px;
+	width: 140px;
+}
+
+div#links /* right-hand sidebar location*/
+{
+	position: absolute;
+	right: 0px;
+	top: 105px;
+	width: 140px;
 }
 
 .current-page /* current page title in the nav bar */
