@@ -112,7 +112,7 @@ p.blurb
 font-size: small;
 }
 
-h2 /*section headings */
+h2 /* subtitles */
 {
 	font-family: Helvetica, Arial, sans-serif;
 	color: rgb(255,255,255);
@@ -120,19 +120,15 @@ h2 /*section headings */
 	font-size: small;
 }
 
-h3 /*Employer or school*/
+h3 /*portfolio item titles*/
 {
 	font-family: "Perpetua Titling MT", serif;
 	text-transform: uppercase;
 	font-size: medium;
 	font-weight: normal;
 	text-indent: 0px;
-}
-
-h4 /* job title */
-{
-	color: rgb(0,0,60); /* dark blue */
-	font-size: small;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .no-border /* images without a natural border*/
