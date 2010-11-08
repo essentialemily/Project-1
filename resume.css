@@ -53,21 +53,27 @@ h3 /*Employer or school*/
 {
 	font-family: "Perpetua Titling MT", serif;
 	text-transform: uppercase;
-	font-size: medium;
+	font-size: large;
 	font-weight: normal;
-	text-indent: 0px;
+	padding-top: 5px;
 }
 
-h4 /* job title */
+h4 /* job or degree */
 {
 	color: rgb(0,0,60); /* dark blue */
 	font-size: small;
+	font-weight: bold;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 ul
 {
 	list-style-type: square;
 	font-size: small;
+	text-indent: 35px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .date /* formatting dates*/
