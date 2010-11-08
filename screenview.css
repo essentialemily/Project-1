@@ -43,6 +43,13 @@ ul#links > li > ul > li
 margin-bottom: 0px;
 padding-left: 10px;
 }
+
+p
+{
+font-size: small;
+line-height: 1.4;
+margin-bottom: 1em;
+}
 	
 .current-page /* current page title in the nav bar */
 {
