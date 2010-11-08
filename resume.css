@@ -1,6 +1,6 @@
 html
 {
-	background: rgb(255,250,240);
+	background: white;
 }
 
 body
@@ -16,7 +16,7 @@ a:hover, a:focus, a:active { text-decoration: underline; color: blue;}
 .address /* sidebar location and address styling*/
 {
 	position: fixed;
-	left: 50px;
+	left: 60px;
 	top: 180px;
 	width: 300px;
 	font-size: small;
@@ -35,7 +35,7 @@ h1 /*name appearance in header*/
 .resume /*location of main page content*/
 {
 	margin-left: 400px;
-	padding: 0px 0px 0px 0px;
+	padding: 30px;
 	width: 600px;
 	border-bottom: 3px solid rgb(0,0,60); /* dark blue */
 }
