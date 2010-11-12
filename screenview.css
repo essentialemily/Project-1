@@ -56,7 +56,7 @@ margin-bottom: 1em;
 	color: rgb(0,0,60); font-style: italic; font-weight: bold; font-size: small;
 }
 
-#content, .portfolio, ul#portfolio-navigation, #header /* horizontal positioning of main page content, header, and portfolio nav*/
+#content, .portfolio, ul#portfolio-navigation, #header, #portfolio-header /* horizontal positioning of main page content, header, and portfolio nav*/
 {
     margin-left: 200px;
 	margin-right: 200px;
@@ -64,9 +64,12 @@ margin-bottom: 1em;
 
 #content, #header 
  {   min-width: 300px;}
- 
+
 .portfolio, ul#portfolio-navigation
 {width: 800px;}
+
+#portfolio-header
+ {min-width: 802px;}
 
 #content
 {
@@ -93,7 +96,7 @@ float: left;
 ul#portfolio-navigation li
 {background: rgb(0,0,60);} /* dark blue */
 
-#header/*header appearance*/
+#header, #portfolio-header /*header appearance*/
  {
 	font-family: "Batik Regular","Blackadder ITC", "Australian Sunrise", "Weltron Urban", "Reprise Title", monospace;
 	font-size: xx-large;
