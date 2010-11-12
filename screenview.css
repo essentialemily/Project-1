@@ -130,9 +130,10 @@ font-size: small;
 .resume /*location of main page content*/
 {
 	margin-left: 400px;
-	padding-top: 30px;
+	margin-top: 30px;	
 	width: 600px;
 	border-bottom: 3px solid rgb(0,0,60); /* dark blue */
+	margin-bottom: 60px;
 }
 
 .address /* sidebar location and address styling*/
