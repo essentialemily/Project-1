@@ -127,16 +127,18 @@ font-size: small;
 .resume /*location of main page content*/
 {
 	margin-left: 400px;
-	padding: 30px;
+	padding-top: 30px;
 	width: 600px;
 	border-bottom: 3px solid rgb(0,0,60); /* dark blue */
 }
 
 .address /* sidebar location and address styling*/
 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: normal;
 	position: fixed;
 	left: 60px;
-	top: 180px;
+	top: 130px;
 	width: 300px;
 	font-size: small;
 	color: rgb(0,0,60); /* dark blue */
