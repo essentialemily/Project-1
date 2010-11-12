@@ -65,19 +65,22 @@ margin-bottom: 1em;
 #content, #header 
  {   min-width: 300px;}
 
-.portfolio, ul#portfolio-navigation
+ul#portfolio-navigation
 {width: 800px;}
 
 #portfolio-header
- {min-width: 802px;}
+{min-width: 780px;}
 
-#content
+.portfolio
+ {min-width: 778px;}
+
+#content, .portfolio
 {
 background: white;
 padding: 10px;
 }
 
-#content /*borders on main page content*/
+#content, .portfolio /*borders on main page content*/
 {
 	border-left: 1px solid rgb(0,0,60); /* dark blue */
 	border-right: 1px solid rgb(0,0,60);
