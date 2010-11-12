@@ -32,8 +32,11 @@ ul#links /* right-hand sidebar location*/
 
 ul
 {
-	list-style-type: square;
 	font-size: small;
+}
+
+div.resume > ul
+{
 	text-indent: 35px;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -149,7 +152,6 @@ h1 /*name appearance in header*/
 	font-family: "Batik Regular","Blackadder ITC", "Australian Sunrise", "Weltron Urban", "Reprise Title", monospace;
 	font-size: xx-large;
 	font-weight: bold;
-	color: rgb(0,0,60); /* dark blue */
 	text-align: left;
 }
 
