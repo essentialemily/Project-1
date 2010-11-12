@@ -31,7 +31,13 @@ ul#links /* right-hand sidebar location*/
 }
 
 ul
-	{font-size: small;}
+{
+	list-style-type: square;
+	font-size: small;
+	text-indent: 35px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
 
 ul#links li
 {
@@ -118,23 +124,71 @@ p.blurb
 font-size: small;
 }
 
-h2 /* subtitles */
+.resume /*location of main page content*/
+{
+	margin-left: 400px;
+	padding: 30px;
+	width: 600px;
+	border-bottom: 3px solid rgb(0,0,60); /* dark blue */
+}
+
+.address /* sidebar location and address styling*/
+{
+	position: fixed;
+	left: 60px;
+	top: 180px;
+	width: 300px;
+	font-size: small;
+	color: rgb(0,0,60); /* dark blue */
+}
+
+h1 /*name appearance in header*/
+ {
+	font-family: "Batik Regular","Blackadder ITC", "Australian Sunrise", "Weltron Urban", "Reprise Title", monospace;
+	font-size: xx-large;
+	font-weight: bold;
+	color: rgb(0,0,60); /* dark blue */
+	text-align: left;
+}
+
+h2 /* subtitles or resume section headings */
 {
 	font-family: Helvetica, Arial, sans-serif;
 	color: rgb(255,255,255);
 	font-weight: bold;
 	font-size: small;
+	padding: 3px 0px 4px 5px;
+	background: rgb(0,0,60); /* dark blue */
 }
 
-h3 /*portfolio item titles*/
+h3 /*portfolio item titles, resume employer or school*/
 {
 	font-family: "Perpetua Titling MT", serif;
 	text-transform: uppercase;
-	font-size: medium;
 	font-weight: normal;
 	text-indent: 0px;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	font-size: large;
+}
+
+h4 /* job or degree */
+{
+	color: rgb(0,0,60); /* dark blue */
+	font-size: small;
+	font-weight: bold;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.date /* formatting dates*/
+{
+	float: right;
+	position: relative;
+	right: 620px;
+	color: rgb(235,190,35); /*gold*/
+	font-weight: bold;
+	font-style: italic;
 }
 
 .no-border /* images without a natural border*/
@@ -151,3 +205,11 @@ div#footer
 	color: rgb(0,0,60); /* dark blue */
 	padding-top: 10px;
 }
+/*
+div#footer
+{
+	font-size: small;
+	color: rgb(0,0,60); /* dark blue
+	padding-left: 50px;	
+}
+*/
