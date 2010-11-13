@@ -15,9 +15,9 @@ a:hover, a:focus, a:active { text-decoration: underline; color: blue;}
 
 div#navigation /* left-hand sidebar location*/
 {
-	position: absolute;
+	position: fixed;
 	left: 60px;
-	top: 135px;
+	top: 115px;
 	width: 140px;
 }
 
@@ -25,7 +25,7 @@ ul#links /* right-hand sidebar location*/
 {
 	position: absolute;
 	right: 0px;
-	top: 135px;
+	top: 115px;
 	width: 140px;
 	list-style-type: square; /* doesn't work*/
 }
@@ -142,7 +142,7 @@ font-size: small;
 #resume-header /* left sidebar location*/
 {
 	position: fixed;
-	left: 60px;
+	left: 56px;
 	top: 28px;
 	width: 300px;
 }
@@ -150,7 +150,7 @@ font-size: small;
 .address /* right sidebar location and address styling*/
 {
 	position: fixed;
-	left: 1050px;
+	left: 1060px;
 	top: 30px;
 	width: 140px;
 	font-family: Helvetica, Arial, sans-serif;
