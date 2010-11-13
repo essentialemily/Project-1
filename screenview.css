@@ -1,6 +1,8 @@
 html
 {
-	background-image: url('images/bluepaint.jpg'); /* Photo from WebTreats ETC, Flickr profile "webtreats".  Photo located at http://www.flickr.com/photos/webtreatsetc/5066045921/sizes/s/in/photostream/ */
+background: rgb(225,240,253);
+
+/*	background-image: url('images/bluepaint.jpg');  Photo from WebTreats ETC, Flickr profile "webtreats".  Photo located at http://www.flickr.com/photos/webtreatsetc/5066045921/sizes/s/in/photostream/ */
 }
 
 body
