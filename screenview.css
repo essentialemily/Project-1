@@ -139,14 +139,22 @@ font-size: small;
 	margin-bottom: 30px;
 }
 
-.address /* sidebar location and address styling*/
+#resume-header /* left sidebar location*/
 {
-	font-family: Helvetica, Arial, sans-serif;
-	font-weight: normal;
 	position: fixed;
 	left: 60px;
-	top: 135px;
+	top: 28px;
 	width: 300px;
+}
+
+.address /* right sidebar location and address styling*/
+{
+	position: fixed;
+	left: 1050px;
+	top: 30px;
+	width: 140px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: normal;
 	font-size: small;
 	color: rgb(0,0,60); /* dark blue */
 }
