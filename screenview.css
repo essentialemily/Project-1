@@ -17,7 +17,7 @@ div#navigation /* left-hand sidebar location*/
 {
 	position: absolute;
 	left: 60px;
-	top: 105px;
+	top: 135px;
 	width: 140px;
 }
 
@@ -25,7 +25,7 @@ ul#links /* right-hand sidebar location*/
 {
 	position: absolute;
 	right: 0px;
-	top: 105px;
+	top: 135px;
 	width: 140px;
 	list-style-type: square; /* doesn't work*/
 }
@@ -71,44 +71,7 @@ margin-bottom: 1em;
 	margin-right: 200px;
 }
 
-#content, #header 
- {   min-width: 300px;}
-
-ul#portfolio-navigation
-{width: 800px;}
-
-#portfolio-header
-{min-width: 780px;}
-
-.portfolio
- {min-width: 778px;}
-
-#content, .portfolio
-{
-background: white;
-padding: 10px;
-}
-
-#content, .portfolio /*borders on main page content*/
-{
-	border-left: 1px solid rgb(0,0,60); /* dark blue */
-	border-right: 1px solid rgb(0,0,60);
-	border-bottom: 3px solid rgb(0,0,60);
-}
-
-ul#portfolio-navigation li /*horizontal portfolio nav bar positioning*/
-{
-position: static;
-width: 150px;
-height: 150px;
-padding: 5px;
-float: left;
-}
-
-ul#portfolio-navigation li
-{background: rgb(0,0,60);} /* dark blue */
-
-#header, #portfolio-header /*header appearance*/
+#header, #portfolio-header /*header appearance, font infomration in case images fail*/
  {
 	font-family: "Batik Regular","Blackadder ITC", "Australian Sunrise", "Weltron Urban", "Reprise Title", monospace;
 	font-size: xx-large;
@@ -120,6 +83,46 @@ ul#portfolio-navigation li
 	padding-left: 10px;
 	padding-right: 10px;
 	background: rgb(0,0,60); /* dark blue */
+}
+
+#header 
+ {min-width: 300px;}
+ 
+#content
+ {
+ min-width: 288px;
+ margin-bottom: 60px;
+ }
+
+#portfolio-header
+{width: 780px;}
+
+.portfolio
+ {width: 768px;}
+ 
+ul#portfolio-navigation
+{width: 800px;}
+
+ul#portfolio-navigation li /*horizontal portfolio nav bar positioning*/
+{
+position: static;
+width: 150px;
+height: 150px;
+padding: 5px;
+float: left;
+margin-bottom: 60px;
+}
+
+ul#portfolio-navigation li
+{background: rgb(0,0,60);} /* dark blue */
+
+#content, .portfolio /*main page content*/
+{
+background: white;
+padding: 15px 15px 0px 15px;
+border-left: 1px solid rgb(0,0,60); /* dark blue */
+border-right: 1px solid rgb(0,0,60);
+border-bottom: 3px solid rgb(0,0,60);
 }
 
 p.blurb
@@ -142,7 +145,7 @@ font-size: small;
 	font-weight: normal;
 	position: fixed;
 	left: 60px;
-	top: 130px;
+	top: 135px;
 	width: 300px;
 	font-size: small;
 	color: rgb(0,0,60); /* dark blue */
