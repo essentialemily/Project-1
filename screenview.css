@@ -91,7 +91,7 @@ margin-bottom: 1em;
 #content
  {
  min-width: 288px;
- margin-bottom: 60px;
+ margin-bottom: 30px;
  }
 
 #portfolio-header
@@ -110,7 +110,7 @@ width: 150px;
 height: 150px;
 padding: 5px;
 float: left;
-margin-bottom: 60px;
+margin-bottom: 30px;
 }
 
 ul#portfolio-navigation li
@@ -136,7 +136,7 @@ font-size: small;
 	margin-top: 30px;	
 	width: 600px;
 	border-bottom: 3px solid rgb(0,0,60); /* dark blue */
-	margin-bottom: 60px;
+	margin-bottom: 30px;
 }
 
 .address /* sidebar location and address styling*/
@@ -206,18 +206,7 @@ border: 1px solid black;
 
 div#footer
 {
-	position: fixed;
-	left: 60px;
-	bottom: 10px;
-	font-size: small;
-	color: rgb(0,0,60); /* dark blue */
-	padding-top: 10px;
+	position: static;
+	margin-left: 60px;
+	margin-bottom: 30px;
 }
-/*
-div#footer
-{
-	font-size: small;
-	color: rgb(0,0,60); /* dark blue
-	padding-left: 50px;	
-}
-*/
