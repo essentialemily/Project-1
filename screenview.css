@@ -87,8 +87,7 @@ ul#links /* right-hand sidebar location*/
 	position: absolute;
 	right: 0px;
 	top: 115px;
-	width: 140px;
-	list-style-type: square; /* doesn't work*/
+	width: 150px;
 }
 
 ul#links li
@@ -100,6 +99,7 @@ ul#links > li > ul > li
 {
 margin-bottom: 0px;
 padding-left: 10px;
+list-style: square inside none;
 }
 
 											/*	Styling and positioning for: standard pages, portfolio pages   */
