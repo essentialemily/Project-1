@@ -96,7 +96,11 @@ margin-bottom: 1em;
  }
  
 #footer
-{ margin-bottom: 30px;}
+{
+margin-bottom: 30px;
+color: grey;
+padding: 15px 15px 0px 0px;
+}
 
 div#portfolio-navigation + div#footer
 {width: 768px;}
@@ -124,7 +128,7 @@ float: left;
 background: rgb(0,0,60);/* dark blue */
 }
 
-#content, .portfolio, #footer /*main page content*/
+#content, .portfolio /*main page content*/
 {
 background: white;
 padding: 15px 15px 0px 15px;
@@ -144,7 +148,6 @@ font-size: small;
 	margin-top: 30px;	
 	width: 600px;
 	border-bottom: 3px solid rgb(0,0,60); /* dark blue */
-	margin-bottom: 30px;
 }
 
 #resume-header /* left sidebar location*/
@@ -153,6 +156,11 @@ font-size: small;
 	left: 56px;
 	top: 28px;
 	width: 300px;
+}
+
+div.resume + div#footer
+{
+margin-left: 400px;
 }
 
 .address /* right sidebar location and address styling*/
