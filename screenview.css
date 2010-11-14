@@ -68,7 +68,7 @@ ul
 div#accessibility
 {
 position: absolute;
-text-indent: -100000px
+text-indent: -10px
 }
 											
 div#navigation /* left-hand sidebar location*/
@@ -193,7 +193,7 @@ border: 1px solid black;
 	width: 300px;
 }
 
-.resume /*location of main page content*/
+#resume /*location of main page content*/
 {
 	margin-left: 400px;
 	margin-top: 30px;	
@@ -201,21 +201,21 @@ border: 1px solid black;
 	border-bottom: 3px solid rgb(0,0,60); /* dark blue */
 }
 
-div.resume + div#footer
+div#resume + div#footer
 {
 margin-left: 400px;
 }
 
-div.resume > ul
+div#resume > ul
 {
 	text-indent: 35px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
-div.resume > ul > li
+div#resume > ul > li
 {list-style: square inside none;}
 
-.address /* right sidebar location and address styling*/
+#address /* right sidebar location and address styling*/
 {
 	position: fixed;
 	left: 1060px;
