@@ -65,7 +65,12 @@ ul
 }
 
 											/*	Navigation bar styling for all pages   */
-
+div#accessibility
+{
+position: absolute;
+text-indent: -100000px
+}
+											
 div#navigation /* left-hand sidebar location*/
 {
 	position: fixed;
