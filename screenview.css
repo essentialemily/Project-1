@@ -66,7 +66,7 @@ margin-bottom: 1em;
 	color: rgb(0,0,60); font-style: italic; font-weight: bold; font-size: small;
 }
 
-#content, .portfolio, ul#portfolio-navigation, #header, #portfolio-header /* horizontal positioning of main page content, header, and portfolio nav*/
+#content, .portfolio, div#portfolio-navigation, #header, #portfolio-header, #footer /* horizontal positioning of main page content, header, and portfolio nav*/
 {
     margin-left: 200px;
 	margin-right: 200px;
@@ -90,35 +90,41 @@ margin-bottom: 1em;
 #header 
  {min-width: 458px;}
  
-#content
+#content, #footer
  {
  min-width: 428px;
- margin-bottom: 30px;
  }
+ 
+#footer
+{ margin-bottom: 30px;}
+
+div#portfolio-navigation + div#footer
+{width: 768px;}
 
 #portfolio-header
 {width: 798px;}
 
 .portfolio
  {width: 768px;}
- 
-ul#portfolio-navigation
-{width: 800px;}
 
-ul#portfolio-navigation li /*horizontal portfolio nav bar positioning*/
+div#portfolio-navigation
+{
+width: 800px;
+height: 160px;
+background: rgb(0,0,60);/* dark blue */
+}
+
+div#portfolio-navigation > ul li /*horizontal portfolio nav bar positioning*/
 {
 position: static;
 width: 150px;
 height: 150px;
 padding: 5px;
 float: left;
-margin-bottom: 30px;
+background: rgb(0,0,60);/* dark blue */
 }
 
-ul#portfolio-navigation li
-{background: rgb(0,0,60);} /* dark blue */
-
-#content, .portfolio /*main page content*/
+#content, .portfolio, #footer /*main page content*/
 {
 background: white;
 padding: 15px 15px 0px 15px;
@@ -213,10 +219,11 @@ h4 /* job or degree */
 {
 border: 1px solid black;
 }
-
+/*
 div#footer
 {
 	position: static;
 	margin-left: 60px;
 	margin-bottom: 30px;
 }
+*/
