@@ -79,15 +79,16 @@ margin-bottom: 1em;
 	font-weight: bold;
 	color: white;
 	text-align: left;
-	padding-top: 1em;
-	padding-bottom: 1em;
-	padding-left: 10px;
-	padding-right: 10px;
-	background: rgb(0,0,60); /* dark blue */
+	padding-top: 20px;
+	border-left: 1px solid rgb(0,0,60);
+	border-right: 1px solid rgb(0,0,60);
+	background-image: url('images/bluefabric.jpg');  /* Photo from WebTreats ETC, Flickr profile "webtreats".  Photo located at http://www.flickr.com/photos/webtreatsetc/5174190865/sizes/z/in/photostream/ */
+	
+/*	background: rgb(0,0,60); /* dark blue */
 }
 
 #header 
- {min-width: 300px;}
+ {min-width: 318px;}
  
 #content
  {
@@ -96,7 +97,7 @@ margin-bottom: 1em;
  }
 
 #portfolio-header
-{width: 780px;}
+{width: 798px;}
 
 .portfolio
  {width: 768px;}
