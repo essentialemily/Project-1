@@ -70,14 +70,9 @@ div#accessibility
 display: none;
 }
 											
-div#navigation /* left-hand sidebar location*/
+div#navigation
 {
 display: none;
-}
-
-.current-page /* current page title in the nav bar */
-{
-	color: rgb(0,0,60); font-style: italic; font-weight: bold; font-size: small;
 }
 
 											/*	Links menu styling on home page   */
