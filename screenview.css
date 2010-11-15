@@ -87,7 +87,7 @@ div#navigation /* left-hand sidebar location*/
 
 											/*	Links menu styling on home page   */
 
-ul#links /* right-hand sidebar location*/
+div#links /* right-hand sidebar location*/
 {
 	position: absolute;
 	right: 0px;
@@ -95,12 +95,12 @@ ul#links /* right-hand sidebar location*/
 	width: 150px;
 }
 
-ul#links li
+div#links > ul li
 {
 margin-bottom: 5px;
 }
 
-ul#links > li > ul > li
+div#links > ul > li > ul > li
 {
 margin-bottom: 0px;
 padding-left: 10px;
