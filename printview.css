@@ -1,13 +1,7 @@
-html
-{
-background-image: url('images/bluepaint.jpg');  /* Photo from WebTreats ETC, Flickr profile "webtreats".  Photo located at http://www.flickr.com/photos/webtreatsetc/5066045921/sizes/s/in/photostream/ */
-
-}
-
 body
 {
 	font-family: Helvetica, Arial, sans-serif;
-	color: rgb(0,0,200);
+	color: rgb(0,0,60);
 }
 
 a,a:link { text-decoration: none; color: rgb(0,0,60);}
@@ -122,7 +116,6 @@ border-bottom: 3px solid rgb(0,0,60);
 	padding-top: 20px;
 	border-left: 1px solid rgb(0,0,60);
 	border-right: 1px solid rgb(0,0,60);
-	background-image: url('images/bluefabric.jpg');  /* Photo from WebTreats ETC, Flickr profile "webtreats".  Photo located at http://www.flickr.com/photos/webtreatsetc/5174190865/sizes/z/in/photostream/ */
 }
 
 #header 
