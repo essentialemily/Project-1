@@ -7,7 +7,7 @@ background-image: url('images/bluepaint.jpg');  /* Photo from WebTreats ETC, Fli
 body
 {
 	font-family: Helvetica, Arial, sans-serif;
-	color: rgb(0,0,60);
+	color: rgb(0,0,200);
 }
 
 a,a:link { text-decoration: none; color: rgb(0,0,60);}
