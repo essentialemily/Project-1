@@ -22,6 +22,9 @@ h1 /*name appearance in header when image is unavailable*/
 	text-align: left;
 }
 
+h1 + h1 /*selects text header (as opposed to image header) */
+{display:none;} /* this text is only needed for our printview.  Note: This is hackish, and part of a temporary solution */
+
 h2 /* subtitles or resume section headings */
 {
 	font-family: Helvetica, Arial, sans-serif;
