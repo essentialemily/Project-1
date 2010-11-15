@@ -183,3 +183,8 @@ div#resume > ul > li
 	font-weight: bold;
 	font-style: italic;
 }
+
+div#resume + div#footer
+{
+display: none;
+}
