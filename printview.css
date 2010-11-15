@@ -171,16 +171,14 @@ div#resume > ul
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
+
 div#resume > ul > li
 {list-style: square inside none;}
-
-
 
 .date /* formatting dates*/
 {
 	float: right;
 	position: relative;
-	right: 620px;
 	color: rgb(235,190,35); /*gold*/
 	font-weight: bold;
 	font-style: italic;
