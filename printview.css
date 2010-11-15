@@ -149,22 +149,15 @@ margin-top: 300px;
 #resume-header /* left sidebar location*/
 {
 	position: fixed;
-	left: 56px;
+	left: 30px;
 	top: 28px;
 	width: 300px;
 }
 
 #resume /*location of main page content*/
 {
-	margin-left: 400px;
-	margin-top: 30px;	
-	width: 610px;
+	margin-top: 90px;
 	border-bottom: 3px solid rgb(0,0,60); /* dark blue */
-}
-
-div#resume + div#footer
-{
-margin-left: 400px;
 }
 
 div#resume > ul
@@ -179,7 +172,7 @@ div#resume > ul > li
 #address /* left sidebar location and address styling*/
 {
 	position: absolute;
-	left: 60px;
+	left: 30px;
 	top: 60px;
 	width: 140px;
 	font-family: Helvetica, Arial, sans-serif;
