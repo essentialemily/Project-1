@@ -151,8 +151,11 @@ margin-top: 300px;
 	top: 28px;
 }
 
-#address /* in doc flow */
+#address /* upper right corner*/
 {
+	position: absolute;
+	top: 0px;
+	right: 0px;
 	font-family: Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	font-size: small;
