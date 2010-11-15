@@ -1,0 +1,238 @@
+html
+{
+background-image: url('images/bluepaint.jpg');  /* Photo from WebTreats ETC, Flickr profile "webtreats".  Photo located at http://www.flickr.com/photos/webtreatsetc/5066045921/sizes/s/in/photostream/ */
+
+}
+
+body
+{
+	font-family: Helvetica, Arial, sans-serif;
+	color: rgb(0,0,60);
+}
+
+a,a:link { text-decoration: none; color: rgb(0,0,60);}
+a:visited { text-decoration: none; color: gray;}
+a:hover, a:focus, a:active { text-decoration: underline; color: blue;}
+
+h1 /*name appearance in header when image is unavailable*/
+ {
+	font-family: "Batik Regular","Blackadder ITC", "Australian Sunrise", "Weltron Urban", "Reprise Title", monospace;
+	font-size: xx-large;
+	font-weight: bold;
+	text-align: left;
+}
+
+h2 /* subtitles or resume section headings */
+{
+	font-family: Helvetica, Arial, sans-serif;
+	color: rgb(255,255,255);
+	font-weight: bold;
+	font-size: small;
+	padding: 3px 0px 4px 5px;
+	background: rgb(0,0,60); /* dark blue */
+}
+
+h3 /*portfolio item titles, resume employer or school*/
+{
+	font-family: "Perpetua Titling MT", serif;
+	text-transform: uppercase;
+	font-weight: normal;
+	text-indent: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: large;
+}
+
+h4 /* job or degree */
+{
+	color: rgb(0,0,60); /* dark blue */
+	font-size: small;
+	font-weight: bold;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+p
+{
+font-size: small;
+line-height: 1.4;
+margin-bottom: 1em;
+}
+
+ul
+{
+	font-size: small;
+}
+
+											/*	Navigation bar styling for all pages   */
+div#accessibility
+{
+position: absolute;
+text-indent: -100000px
+}
+											
+div#navigation /* left-hand sidebar location*/
+{
+	position: fixed;
+	left: 60px;
+	top: 115px;
+	width: 140px;
+}
+
+.current-page /* current page title in the nav bar */
+{
+	color: rgb(0,0,60); font-style: italic; font-weight: bold; font-size: small;
+}
+
+
+											/*	Links menu styling on home page   */
+
+div#links /* right-hand sidebar location*/
+{
+	position: absolute;
+	right: 0px;
+	top: 115px;
+	width: 150px;
+}
+
+div#links > ul li
+{
+margin-bottom: 5px;
+}
+
+div#links > ul > li > ul > li
+{
+margin-bottom: 0px;
+padding-left: 10px;
+list-style: square inside none;
+}
+
+											/*	Styling and positioning for: standard pages, portfolio pages   */
+
+#content, #portfolio, div#portfolio-navigation, #header, #portfolio-header, #footer
+{
+    margin-left: 200px;
+	margin-right: 200px;
+}
+
+#content, #portfolio /*main page content*/
+{
+background: white;
+padding: 15px 15px 0px 15px;
+border-left: 1px solid rgb(0,0,60); /* dark blue */
+border-right: 1px solid rgb(0,0,60);
+border-bottom: 3px solid rgb(0,0,60);
+}
+
+#content
+ {
+ min-width: 428px;
+ }
+ 
+ #portfolio
+ {width: 768px;}
+
+#header, #portfolio-header /*header appearance, font infomration in case images fail*/
+ {
+	font-family: "Batik Regular","Blackadder ITC", "Australian Sunrise", "Weltron Urban", "Reprise Title", monospace;
+	font-size: xx-large;
+	font-weight: bold;
+	color: white;
+	text-align: left;
+	padding-top: 20px;
+	border-left: 1px solid rgb(0,0,60);
+	border-right: 1px solid rgb(0,0,60);
+	background-image: url('images/bluefabric.jpg');  /* Photo from WebTreats ETC, Flickr profile "webtreats".  Photo located at http://www.flickr.com/photos/webtreatsetc/5174190865/sizes/z/in/photostream/ */
+}
+
+#header 
+ {min-width: 458px;}
+ 
+#portfolio-header
+{width: 798px;} 
+
+#footer
+{
+margin-bottom: 30px;
+color: gray;
+padding: 15px 15px 0px 0px;
+min-width: 428px;
+}
+
+div#portfolio-navigation + div#footer /* footer on portfolio pages */
+{width: 768px;}
+
+div#portfolio-navigation
+{
+width: 800px;
+height: 160px;
+background: rgb(0,0,60);/* dark blue */
+}
+
+div#portfolio-navigation > ul li
+{
+position: static;
+width: 150px;
+height: 150px;
+padding: 5px;
+float: left;
+background: rgb(0,0,60);/* dark blue */
+}
+
+.no-border /* images without a natural border*/
+{
+border: 1px solid black;
+}
+
+											/*	Styles and positioning for resume   */
+#resume-header /* left sidebar location*/
+{
+	position: fixed;
+	left: 56px;
+	top: 28px;
+	width: 300px;
+}
+
+#resume /*location of main page content*/
+{
+	margin-left: 400px;
+	margin-top: 30px;	
+	width: 610px;
+	border-bottom: 3px solid rgb(0,0,60); /* dark blue */
+}
+
+div#resume + div#footer
+{
+margin-left: 400px;
+}
+
+div#resume > ul
+{
+	text-indent: 35px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+div#resume > ul > li
+{list-style: square inside none;}
+
+#address /* right sidebar location and address styling*/
+{
+	position: fixed;
+	left: 1060px;
+	top: 30px;
+	width: 140px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-size: small;
+	color: rgb(0,0,60); /* dark blue */
+}
+
+.date /* formatting dates*/
+{
+	float: right;
+	position: relative;
+	right: 620px;
+	color: rgb(235,190,35); /*gold*/
+	font-weight: bold;
+	font-style: italic;
+}
