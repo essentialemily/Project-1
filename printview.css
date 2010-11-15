@@ -81,18 +81,14 @@ display: none;
 }
 
 											/*	Links menu styling on home page   */
-
-div#links /* right-hand sidebar location*/
+div#links > ul > li
 {
-	position: absolute;
-	right: 0px;
-	top: 115px;
-	width: 150px;
-}
-
-div#links > ul li
-{
-margin-bottom: 5px;
+position: static;
+width: 150px;
+height: 150px;
+padding: 5px;
+float: left;
+background: rgb(0,0,60);/* dark blue */
 }
 
 div#links > ul > li > ul > li
