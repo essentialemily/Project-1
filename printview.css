@@ -19,11 +19,11 @@ h1 /*name appearance in header when image is unavailable*/
 h2 /* subtitles or resume section headings */
 {
 	font-family: Helvetica, Arial, sans-serif;
-	color: rgb(255,255,255);
+	color: rgb(0,0,60);
 	font-weight: bold;
 	font-size: small;
 	padding: 3px 0px 4px 5px;
-	background: rgb(0,0,60); /* dark blue */
+	border: 1px solid rgb(0,0,60);
 }
 
 h3 /*portfolio item titles, resume employer or school*/
