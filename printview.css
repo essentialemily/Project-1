@@ -67,23 +67,18 @@ ul
 											/*	Navigation bar styling for all pages   */
 div#accessibility
 {
-position: absolute;
-text-indent: -100000px
+display: none;
 }
 											
 div#navigation /* left-hand sidebar location*/
 {
-	position: fixed;
-	left: 60px;
-	top: 115px;
-	width: 140px;
+display: none;
 }
 
 .current-page /* current page title in the nav bar */
 {
 	color: rgb(0,0,60); font-style: italic; font-weight: bold; font-size: small;
 }
-
 
 											/*	Links menu styling on home page   */
 
@@ -108,12 +103,6 @@ list-style: square inside none;
 }
 
 											/*	Styling and positioning for: standard pages, portfolio pages   */
-
-#content, #portfolio, div#portfolio-navigation, #header, #portfolio-header, #footer
-{
-    margin-left: 200px;
-	margin-right: 200px;
-}
 
 #content, #portfolio /*main page content*/
 {
