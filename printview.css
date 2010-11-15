@@ -10,10 +10,12 @@ a:hover, a:focus, a:active { text-decoration: underline; color: blue;}
 
 h1 /*name appearance in header when image is unavailable*/
  {
+	position: relative;
+	bottom: 30px;
 	font-family: "Batik Regular","Blackadder ITC", "Australian Sunrise", "Weltron Urban", "Reprise Title", monospace;
 	font-size: xx-large;
 	font-weight: bold;
-	text-align: left;
+	color: rgb(0,0,60);
 }
 
 h2 /* subtitles or resume section headings */
@@ -111,6 +113,7 @@ border-bottom: 3px solid rgb(0,0,60);
 	color: white;
 	text-align: left;
 	padding-top: 20px;
+	border-top: 1px solid rgb(0,0,60);	
 	border-left: 1px solid rgb(0,0,60);
 	border-right: 1px solid rgb(0,0,60);
 }
