@@ -98,13 +98,10 @@ border-right: 1px solid rgb(0,0,60);
 border-bottom: 3px solid rgb(0,0,60);
 }
 
-#content
+#content, #portfolio
  {
  min-width: 428px;
  }
- 
- #portfolio
- {width: 768px;}
 
 #header, #portfolio-header /*header appearance, font infomration in case images fail*/
  {
@@ -118,11 +115,8 @@ border-bottom: 3px solid rgb(0,0,60);
 	border-right: 1px solid rgb(0,0,60);
 }
 
-#header 
+#header, #portfolio-header
  {min-width: 458px;}
- 
-#portfolio-header
-{width: 798px;} 
 
 #footer
 {
