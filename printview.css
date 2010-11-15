@@ -146,17 +146,22 @@ margin-top: 300px;
 }
 
 											/*	Styles and positioning for resume   */
-#resume-header /* left sidebar location*/
+#resume-header /* in doc flow*/
 {
-	position: fixed;
-	left: 30px;
 	top: 28px;
-	width: 300px;
+}
+
+#address /* in doc flow */
+{
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-size: small;
+	color: rgb(0,0,60); /* dark blue */
 }
 
 #resume /*location of main page content*/
 {
-	margin-top: 90px;
+	padding-top: 20px;
 	border-bottom: 3px solid rgb(0,0,60); /* dark blue */
 }
 
@@ -169,17 +174,7 @@ div#resume > ul
 div#resume > ul > li
 {list-style: square inside none;}
 
-#address /* left sidebar location and address styling*/
-{
-	position: absolute;
-	left: 30px;
-	top: 60px;
-	width: 140px;
-	font-family: Helvetica, Arial, sans-serif;
-	font-weight: normal;
-	font-size: small;
-	color: rgb(0,0,60); /* dark blue */
-}
+
 
 .date /* formatting dates*/
 {
