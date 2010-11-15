@@ -176,11 +176,11 @@ div#resume > ul
 div#resume > ul > li
 {list-style: square inside none;}
 
-#address /* right sidebar location and address styling*/
+#address /* left sidebar location and address styling*/
 {
-	position: fixed;
-	left: 1060px;
-	top: 30px;
+	position: absolute;
+	left: 60px;
+	top: 60px;
 	width: 140px;
 	font-family: Helvetica, Arial, sans-serif;
 	font-weight: normal;
