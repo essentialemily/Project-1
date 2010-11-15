@@ -126,22 +126,11 @@ padding: 15px 15px 0px 0px;
 min-width: 428px;
 }
 
-div#portfolio-navigation + div#footer /* footer on portfolio pages */
-{width: 768px;}
-
-div#portfolio-navigation
-{
-width: 800px;
-height: 160px;
-background: rgb(0,0,60);/* dark blue */
-}
-
 div#portfolio-navigation > ul li
 {
 position: static;
 width: 150px;
 height: 150px;
-padding: 5px;
 float: left;
 background: rgb(0,0,60);/* dark blue */
 }
@@ -149,6 +138,11 @@ background: rgb(0,0,60);/* dark blue */
 .no-border /* images without a natural border*/
 {
 border: 1px solid black;
+}
+
+div#portfolio-navigation + div#footer
+{
+margin-top: 300px;
 }
 
 											/*	Styles and positioning for resume   */
