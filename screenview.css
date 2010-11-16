@@ -14,6 +14,11 @@ a,a:link { text-decoration: none; color: rgb(0,0,60);}
 a:visited { text-decoration: none; color: gray;}
 a:hover, a:focus, a:active { text-decoration: underline; color: blue; outline: 0px;}
 
+em
+{
+    font-style: italic;
+}
+
 h1 /*name appearance in header when image is unavailable*/
  {
 	font-family: "Batik Regular","Blackadder ITC", "Australian Sunrise", "Weltron Urban", "Reprise Title", monospace;
