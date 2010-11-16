@@ -12,7 +12,7 @@ body
 
 a,a:link { text-decoration: none; color: rgb(0,0,60);}
 a:visited { text-decoration: none; color: gray;}
-a:hover, a:focus, a:active { text-decoration: underline; color: blue;}
+a:hover, a:focus, a:active { text-decoration: underline; color: blue; outline: 0px;}
 
 h1 /*name appearance in header when image is unavailable*/
  {
@@ -73,7 +73,7 @@ div#accessibility
 position: absolute;
 text-indent: -100000px
 }
-											
+
 div#navigation /* left-hand sidebar location*/
 {
 	position: fixed;
@@ -131,7 +131,7 @@ border-bottom: 3px solid rgb(0,0,60);
  {
  min-width: 428px;
  }
- 
+
  #portfolio
  {width: 768px;}
 
@@ -148,11 +148,11 @@ border-bottom: 3px solid rgb(0,0,60);
 	background-image: url('images/bluefabric.jpg');  /* Photo from WebTreats ETC, Flickr profile "webtreats".  Photo located at http://www.flickr.com/photos/webtreatsetc/5174190865/sizes/z/in/photostream/ */
 }
 
-#header 
+#header
  {min-width: 458px;}
- 
+
 #portfolio-header
-{width: 798px;} 
+{width: 798px;}
 
 #footer
 {
@@ -199,7 +199,7 @@ border: 1px solid black;
 #resume /*location of main page content*/
 {
 	margin-left: 400px;
-	margin-top: 30px;	
+	margin-top: 30px;
 	width: 610px;
 	border-bottom: 3px solid rgb(0,0,60); /* dark blue */
 }
@@ -239,3 +239,4 @@ div#resume > ul > li
 	font-weight: bold;
 	font-style: italic;
 }
+
