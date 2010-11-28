@@ -17,7 +17,7 @@
 <body>
 
 	<div id="header">
-		<h1><a href="index.htm"><img src="images/emilysutherlin-white-lg.png" alt="Emily Sutherlin"/></a></h1>
+		<h1><a href="http://www.emilysutherlin.com"><img src="images/emilysutherlin-white-lg.png" alt="Emily Sutherlin"/></a></h1>
 		<h1>Emily Sutherlin</h1>
 
 	<?php 
@@ -104,7 +104,7 @@ function fancytext($text) {
 	<div id="navigation">
 		<ul>
 			<li class="current-page"><a href="#header">Home</a></li>
-			<li><a href="portfolio/index.htm">Portfolio</a></li>
+			<li><a href="http://www.emilysutherlin.com/portfolio">Portfolio</a></li>
 			<li><a href="resume.htm">Resumé</a></li>
 			<li><a href="about-me.htm">About Me</a></li>
 		</ul>
