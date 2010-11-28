@@ -67,6 +67,18 @@ line-height: 1.4;
 margin-bottom: 1em;
 }
 
+p.tweet
+{
+padding: 0px 3px 0px 3px;
+margin-bottom: 0em;
+}
+
+p.tweet-info
+{
+padding: 0px 3px 0px 3px;
+text-align: right;
+}
+
 ul
 {
 	font-size: small;
