@@ -13,9 +13,8 @@
 	<body>
 	
 	<div id="header">
-		<h1><a href="index.htm"><img src="images/emilysutherlin-white.png" alt="Emily Sutherlin"/></a></h1>
+		<h1><a href="index.htm"><img src="images/emilysutherlin-white-lg.png" alt="Emily Sutherlin"/></a></h1>
 		<h1>Emily Sutherlin</h1>
-			<h2>Tweets</h2>
 
 	<?php 
 kstwitter();
@@ -75,7 +74,7 @@ function kstwitter() {
 	$tweet = preg_replace($twsearch, $twreplace, $tweet);
 	/*Print it out*/
 	print "<p class=\"tweet\">".fancytext($tweet)."</p>
-	  <p class=\"tweet-info\">— ".$tweetdate." at ".$tweettime."</a></p>";
+	  <p class=\"tweet-info\">Posted to <a href=\"http://twitter.com/essentialemily\">Twitter</a> ".$tweetdate." at ".$tweettime."</a></p>";
 	}
 }
 
@@ -88,7 +87,7 @@ function fancytext($text) {
 }
 
 		?>
-	
+			<h2>Tweets</h2>	
 		</div>
 	</body>
 </html>
