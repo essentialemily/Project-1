@@ -1,0 +1,196 @@
+<?php require('simplepie.inc'); ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>emilysutherlin.com | Home</title>
+	<link rel="stylesheet" href="reset.css" type="text/css" />
+	<link rel="stylesheet" href="screenview.css" media="screen" type="text/css" />
+	<link rel="stylesheet" href="printview.css" type="text/css" media="print" /> <!--printview css not created yet-->
+	<link rel="stylesheet" href="edge.css" type="text/css" />
+	<link rel="shortcut icon" href="http://www.emilysutherlin.com/favicon.png" type="image/png" />
+
+</head>
+
+<body>
+
+	<div id="header">
+		<h1><a href="index.htm"><img src="images/emilysutherlin-white-lg.png" alt="Emily Sutherlin"/></a></h1>
+		<h1>Emily Sutherlin</h1>
+
+	<?php 
+kstwitter();
+
+function kstwitter() {
+
+  $kstwitfeed= new SimplePie;
+  $kstwitfeed->enable_cache(false);
+  $kstwitfeed->set_feed_url('http://twitter.com/statuses/user_timeline/103719649.rss');
+  $kstwitfeed->handle_content_type();
+  $kstwitfeed->init();
+
+  if($kstwitfeed->error()) {
+  /*If there's an error message, spit it out and stop*/
+  print "<p class=\"tweet\">".$kstwitfeed->error()."</p>
+  <p class=\"tweet-info\">
+  A recent Twitter post cannot be retrieved.</p>";
+	}
+	
+	else { 
+	/*Otherwise, attempt to get the tweet, etc.*/  
+	/*Get some stuff, but not @replies */
+		//for($i=0; $i < 5; $i++) {
+		$i = 0;
+		$ksgotone = 'no';
+	while($ksgotone=='no') {
+	  if($item=$kstwitfeed->get_item($i)) {
+		$tweet = substr($item->get_title(), 16);
+		$tweet = substr(addslashes(html_entity_decode($item->get_title())), 16);
+		$tweetdate = $item->get_date('F j');
+		$tweetday = $item->get_date('j');
+		$ksd = date('j');
+		  if ($tweetday==$ksd) { $tweetdate = "today"; }
+		  else if ($tweetday==($ksd-1)) { $tweetdate = "yesterday"; }
+		  else { $tweetdate = "On " . $tweetdate; }
+		$tweettime = $item->get_date('g\:i a');
+		$ksgotone = 'yes';
+	  }
+	  else {
+		$tweet = "Trouble retrieving tweet from";
+		$tweetdate = "today";
+		$tweettime = "<!--".$i."-->";
+		$ksgotone = 'yes';
+	  }
+	}
+	$twsearch = array(
+	  '%((www\.|(http|https)+\:\/\/)[_.a-zA-Z0-9-]+\.[a-zA-Z0-9\/_:@=.+?,##\%&~-]*[^.|\'|\# |!|\(|?|,| |>|<|;|\)])%',
+	  '|@([\w_]+)|',
+	  '|#([\w_]+)|'
+	);
+	$twreplace = array(
+	  '<a href="$1">$1</a>',
+	  '<a href="http://twitter.com/$1">@$1</a>',
+	  '<a href="http://twitter.com/search?q=%23$1">#$1</a>'
+	);
+	$tweet = preg_replace($twsearch, $twreplace, $tweet);
+	/*Print it out*/
+	print "<p class=\"tweet\">\"".fancytext($tweet)."\"</p>
+	  <p class=\"tweet-info\">- <a href=\"http://twitter.com/essentialemily\">@essentialemily on Twitter</a> ".$tweetdate." at ".$tweettime."</a></p>";
+	}
+}
+
+function fancytext($text) {
+  $simpfound = array(' \\\'', '\\\'', ' \"', '\" ', '\"');
+  //Fix them with
+  $simpfixed = array(' ‘', '’', ' “', '” ', '“');
+  $fancysafe = str_replace($simpfound, $simpfixed, $text);
+  return $fancysafe;
+}
+
+		?>
+			<h2>Home</h2>	
+	</div>
+	
+	<div id="accessibility">
+		<ul>
+			<li><a href="#navigation">Skip to navigation</a></li>
+			<li><a href="#content">Skip to content</a></li>
+			<li><a href="#links">Skip to external links</a></li>			
+		</ul>
+	</div>
+
+	<div id="navigation">
+		<ul>
+			<li class="current-page"><a href="#header">Home</a></li>
+			<li><a href="portfolio/index.htm">Portfolio</a></li>
+			<li><a href="resume.htm">Resumé</a></li>
+			<li><a href="about-me.htm">About Me</a></li>
+		</ul>
+	</div>
+	
+
+	<div id="content">
+	
+	<h3>Welcome</h3>
+		<p>And thanks for visiting the personal and professional website for Emily Sutherlin.  This site was developed during <a href="http://karlstolley.com">Karl Stolley</a>'s <a href="http://courses.karlstolley.com/530/CourseHome">"Standards-Based Web Design"</a> course at <a href="http://www.iit.edu/csl/hum/">IIT</a>. It is a constant work in progress, so please <a href="mailto:esutherl@iit.edu">email me</a> if you have any feedback, ideas, or words of advice! And...
+		</p>
+	
+	<h3>Come back soon when the blog is live!</h3>
+		<p>For now, feel free to peruse my site via the links at left, or check out some of my interests via the links on the right.</p>
+		<p>~Emily</p>
+		
+	</div>
+
+	<div id="footer">
+			<p>Copyright © 2010 <a href="mailto:esutherl@iit.edu">Emily Sutherlin</a>. Valid <a href="http://validator.w3.org/">HTML</a> and <a href="http://jigsaw.w3.org/css-validator/">CSS</a>. Git repository at <a href="https://github.com/essentialemily/Project-1">Github</a>.</p>
+	</div>
+
+	<div id="links">
+		<ul>
+		
+			<li><h4>Social Networks</h4>
+				<ul>
+					<li><a href="http://www.facebook.com/people/Emily-Sutherlin/54302056">Facebook</a></li>
+					<li><a href="http://twitter.com/essentialemily">Twitter</a></li>
+					<li><a href="http://www.linkedin.com/pub/emily-sutherlin/12/777/3b8">LinkedIn</a></li>
+				</ul>
+			</li>
+			
+			<li><h4>Organizations</h4>
+				<ul>				
+					<li><a href="http://www.acui.org/">Association of College Unions International</a></li>
+					<li><a href="http://www.alphasigmaalpha.org/">Alpha Sigma Alpha</a></li>
+					<li><a href="http://www.pioneer-corps.org/">Pioneer Drum Corps</a></li>
+					<li><a href="http://www.stbaldricks.org/">St. Baldrick's</a></li>
+				</ul>
+			</li>
+
+			<li><h4>News Columns</h4>
+				<ul>
+					<li><a href="http://news.discovery.com/">Discovery News</a></li>
+					<li><a href="http://www.wired.com/">Wired News</a></li>
+					<li><a href="http://www.uptownupdate.com/">Uptown Update</a></li>				
+				</ul>
+			</li>
+			
+			<li><h4>TV Shows</h4>
+				<ul>
+					<li><a href="http://www.nbc.com/law-and-order-special-victims-unit/">Law and Order: SVU</a></li>
+					<li><a href="http://www.fox.com/house/">House</a></li>
+					<li><a href="http://abc.go.com/shows/castle">Castle</a></li>
+					<li><a href="http://dsc.discovery.com/tv/mythbusters/">MythBusters</a></li>
+					<li><a href="http://dsc.discovery.com/tv/man-woman-wild/">Man, Woman, Wild</a></li>
+					<li><a href="http://www.mylifetime.com/shows/project-runway">Project Runway</a></li>
+					<li><a href="http://www.bravotv.com/top-chef">Top Chef</a></li>
+				</ul>
+			</li>
+			
+	<!--	knitting, sewing and music  -->			
+	
+			<li><h4>Board Games</h4>
+				<ul>
+					<li><a href="http://www.scrabble.com/">Scrabble</a></li>
+					<li><a href="http://www.daysofwonder.com/tickettoride/">Ticket to Ride</a></li>
+					<li><a href="http://www.wizards.com/roborally/">RoboRally</a></li>
+				</ul>
+			</li>		
+
+			<li><h4>iPhone/Computer Games</h4>
+				<ul>
+					<li><a href="http://firemint.com/?page_id=565">Flight Control</a></li>
+					<li><a href="http://itunes.apple.com/us/app/shibuya/">Shibuya</a></li>
+					<li><a href="http://itunes.apple.com/us/app/cut-the-rope/">Cut the Rope</a></li>
+					<li><a href="http://itunes.apple.com/us/app/words-with-friends/">Words With Friends</a></li>
+					<li><a href="http://www.playauditorium.com/">Auditorium</a></li>
+					<li><a href="http://areacodeinc.com/drop7/">Drop7</a></li>
+					<li><a href="http://www.pegglefever.com/">Peggle</a></li>
+				</ul>
+			</li>	
+		</ul>	
+	</div>
+
+</body>
+
+</html>
