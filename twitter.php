@@ -73,7 +73,7 @@ function kstwitter() {
 	);
 	$tweet = preg_replace($twsearch, $twreplace, $tweet);
 	/*Print it out*/
-	print "<p class=\"tweet\">".fancytext($tweet)."</p>
+	print "<p class=\"tweet\">\"".fancytext($tweet)."\"</p>
 	  <p class=\"tweet-info\">Posted to <a href=\"http://twitter.com/essentialemily\">Twitter</a> ".$tweetdate." at ".$tweettime."</a></p>";
 	}
 }
