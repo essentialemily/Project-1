@@ -31,8 +31,7 @@ function kstwitter() {
   /*If there's an error message, spit it out and stop*/
   print "<p class=\"tweet\">".$kstwitfeed->error()."</p>
   <p class=\"tweet-info\">
-  <strong>We are doomed.</strong>
-  Appease the Twitter gods.</p>";
+  A recent Twitter post cannot be retrieved.</p>";
 	}
 	
 	else { 
@@ -55,9 +54,9 @@ function kstwitter() {
 		$ksgotone = 'yes';
 	  }
 	  else {
-		$tweet = "Epic Twitter Fail.";
-		$tweetdate = "Angry Twitter Gods";
-		$tweettime = "this moment<!--".$i."-->";
+		$tweet = "Trouble retrieving tweet from";
+		$tweetdate = "today";
+		$tweettime = "<!--".$i."-->";
 		$ksgotone = 'yes';
 	  }
 	}
@@ -74,7 +73,7 @@ function kstwitter() {
 	$tweet = preg_replace($twsearch, $twreplace, $tweet);
 	/*Print it out*/
 	print "<p class=\"tweet\">\"".fancytext($tweet)."\"</p>
-	  <p class=\"tweet-info\">Posted to <a href=\"http://twitter.com/essentialemily\">Twitter</a> ".$tweetdate." at ".$tweettime."</a></p>";
+	  <p class=\"tweet-info\">-<a href=\"http://twitter.com/essentialemily\">@essentialemily on Twitter</a>".$tweetdate." at ".$tweettime."</a></p>";
 	}
 }
 
