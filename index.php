@@ -124,7 +124,11 @@ function fancytext($text) {
 	</div>
 
 	<div id="footer">
-			<p>Copyright © 2010 <a href="mailto:esutherl@iit.edu">Emily Sutherlin</a>. Valid <a href="http://validator.w3.org/">HTML</a> and <a href="http://jigsaw.w3.org/css-validator/">CSS</a>. Git repository at <a href="https://github.com/essentialemily/Project-1">Github</a>.</p>
+			<p>Copyright © 2010 <a href="mailto:esutherl@iit.edu">Emily Sutherlin</a>.
+				<a href="http://validator.w3.org/check?uri=referer"><img
+					src="http://www.w3.org/Icons/valid-xhtml10"
+					alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
+				and <a href="http://jigsaw.w3.org/css-validator/">CSS</a>. Git repository at <a href="https://github.com/essentialemily/Project-1">Github</a>.</p>
 	</div>
 
 	<div id="links">
