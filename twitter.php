@@ -23,7 +23,7 @@ function kstwitter() {
 
   $kstwitfeed= new SimplePie;
   $kstwitfeed->enable_cache(false);
-  $kstwitfeed->set_feed_url('http://twitter.com/statuses/user_timeline/16049663.rss');
+  $kstwitfeed->set_feed_url('http://twitter.com/statuses/user_timeline/103719649.rss');
   $kstwitfeed->handle_content_type();
   $kstwitfeed->init();
 
@@ -43,8 +43,8 @@ function kstwitter() {
 		$ksgotone = 'no';
 	while($ksgotone=='no') {
 	  if($item=$kstwitfeed->get_item($i)) {
-		$tweet = substr($item->get_title(), 13);
-		$tweet = substr(addslashes(html_entity_decode($item->get_title())), 13);
+		$tweet = substr($item->get_title(), 16);
+		$tweet = substr(addslashes(html_entity_decode($item->get_title())), 16);
 		$tweetdate = $item->get_date('F j');
 		$tweetday = $item->get_date('j');
 		$ksd = date('j');
