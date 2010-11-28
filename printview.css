@@ -55,6 +55,11 @@ line-height: 1.4;
 margin-bottom: 1em;
 }
 
+p.tweet,p.tweet-info
+{
+display: none;
+}
+
 ul
 {
 	font-size: small;
