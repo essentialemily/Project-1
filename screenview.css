@@ -69,14 +69,15 @@ margin-bottom: 1em;
 
 p.tweet
 {
-padding: 0px 3px 0px 3px;
+padding: 5px;
 margin-bottom: 0em;
 }
 
 p.tweet-info
 {
-padding: 0px 3px 0px 3px;
+padding: 5px;
 text-align: right;
+margin-bottom: 0em;
 }
 
 ul
