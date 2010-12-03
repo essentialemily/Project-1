@@ -99,6 +99,14 @@ div#navigation /* left-hand sidebar location*/
 	width: 140px;
 }
 
+div#twitter
+{
+    float: right;
+    width: 30%;
+    margin: 0px 0px 0px 10px;
+    border: 1px solid rgb(0,0,60);
+}
+
 .current-page /* current page title in the nav bar */
 {
 	color: rgb(0,0,60); font-style: italic; font-weight: bold; font-size: small;

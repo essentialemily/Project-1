@@ -19,8 +19,31 @@
 	<div id="header">
 		<h1><a href="http://www.emilysutherlin.com"><img src="images/emilysutherlin-white-lg.png" alt="Emily Sutherlin"/></a></h1>
 		<h1>Emily Sutherlin</h1>
+			<h2>Home</h2>
+	</div>
 
-	<?php 
+	<div id="accessibility">
+		<ul>
+			<li><a href="#navigation">Skip to navigation</a></li>
+			<li><a href="#content">Skip to content</a></li>
+			<li><a href="#links">Skip to external links</a></li>
+		</ul>
+	</div>
+
+	<div id="navigation">
+		<ul>
+			<li class="current-page"><a href="#header">Home</a></li>
+			<li><a href="http://www.emilysutherlin.com/portfolio">Portfolio</a></li>
+			<li><a href="resume.htm">Resumé</a></li>
+			<li><a href="about-me.htm">About Me</a></li>
+		</ul>
+	</div>
+
+
+
+	<div id="content">
+	    <div id="twitter">
+	<?php
 kstwitter();
 
 function kstwitter() {
@@ -37,9 +60,9 @@ function kstwitter() {
   <p class=\"tweet-info\">
   A recent Twitter post cannot be retrieved.</p>";
 	}
-	
-	else { 
-	/*Otherwise, attempt to get the tweet, etc.*/  
+
+	else {
+	/*Otherwise, attempt to get the tweet, etc.*/
 	/*Get some stuff, but not @replies */
 		//for($i=0; $i < 5; $i++) {
 		$i = 0;
@@ -90,37 +113,15 @@ function fancytext($text) {
 }
 
 		?>
-			<h2>Home</h2>	
-	</div>
-	
-	<div id="accessibility">
-		<ul>
-			<li><a href="#navigation">Skip to navigation</a></li>
-			<li><a href="#content">Skip to content</a></li>
-			<li><a href="#links">Skip to external links</a></li>			
-		</ul>
-	</div>
-
-	<div id="navigation">
-		<ul>
-			<li class="current-page"><a href="#header">Home</a></li>
-			<li><a href="http://www.emilysutherlin.com/portfolio">Portfolio</a></li>
-			<li><a href="resume.htm">Resumé</a></li>
-			<li><a href="about-me.htm">About Me</a></li>
-		</ul>
-	</div>
-	
-
-	<div id="content">
-	
+    </div>		<!--	end of twitter feed  -->
 	<h3>Welcome</h3>
 		<p>And thanks for visiting the personal and professional website for Emily Sutherlin.  This site was developed during <a href="http://karlstolley.com">Karl Stolley</a>'s <a href="http://courses.karlstolley.com/530/CourseHome">"Standards-Based Web Design"</a> course at <a href="http://www.iit.edu/csl/hum/">IIT</a>. It is a constant work in progress, so please <a href="mailto:esutherl@iit.edu">email me</a> if you have any feedback, ideas, or words of advice! And...
 		</p>
-	
+
 	<h3>Come back soon when the blog is live!</h3>
 		<p>For now, feel free to peruse my site via the links at left, or check out some of my interests via the links on the right.</p>
 		<p>~Emily</p>
-		
+
 	</div>
 
 	<div id="footer">
@@ -133,7 +134,7 @@ function fancytext($text) {
 
 	<div id="links">
 		<ul>
-		
+
 			<li><h4>Social Networks</h4>
 				<ul>
 					<li><a href="http://www.facebook.com/people/Emily-Sutherlin/54302056">Facebook</a></li>
@@ -141,9 +142,9 @@ function fancytext($text) {
 					<li><a href="http://www.linkedin.com/pub/emily-sutherlin/12/777/3b8">LinkedIn</a></li>
 				</ul>
 			</li>
-			
+
 			<li><h4>Organizations</h4>
-				<ul>				
+				<ul>
 					<li><a href="http://www.acui.org/">Association of College Unions International</a></li>
 					<li><a href="http://www.alphasigmaalpha.org/">Alpha Sigma Alpha</a></li>
 					<li><a href="http://www.pioneer-corps.org/">Pioneer Drum Corps</a></li>
@@ -155,10 +156,10 @@ function fancytext($text) {
 				<ul>
 					<li><a href="http://news.discovery.com/">Discovery News</a></li>
 					<li><a href="http://www.wired.com/">Wired News</a></li>
-					<li><a href="http://www.uptownupdate.com/">Uptown Update</a></li>				
+					<li><a href="http://www.uptownupdate.com/">Uptown Update</a></li>
 				</ul>
 			</li>
-			
+
 			<li><h4>TV Shows</h4>
 				<ul>
 					<li><a href="http://www.nbc.com/law-and-order-special-victims-unit/">Law and Order: SVU</a></li>
@@ -170,16 +171,16 @@ function fancytext($text) {
 					<li><a href="http://www.bravotv.com/top-chef">Top Chef</a></li>
 				</ul>
 			</li>
-			
-	<!--	knitting, sewing and music  -->			
-	
+
+	<!--	knitting, sewing and music  -->
+
 			<li><h4>Board Games</h4>
 				<ul>
 					<li><a href="http://www.scrabble.com/">Scrabble</a></li>
 					<li><a href="http://www.daysofwonder.com/tickettoride/">Ticket to Ride</a></li>
 					<li><a href="http://www.wizards.com/roborally/">RoboRally</a></li>
 				</ul>
-			</li>		
+			</li>
 
 			<li><h4>iPhone/Computer Games</h4>
 				<ul>
@@ -191,10 +192,11 @@ function fancytext($text) {
 					<li><a href="http://areacodeinc.com/drop7/">Drop7</a></li>
 					<li><a href="http://www.pegglefever.com/">Peggle</a></li>
 				</ul>
-			</li>	
-		</ul>	
+			</li>
+		</ul>
 	</div>
 
 </body>
 
 </html>
+
