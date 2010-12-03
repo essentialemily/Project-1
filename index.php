@@ -43,6 +43,7 @@
 
 	<div id="content">
 	    <div id="twitter">
+            <h2>On Twitter</h2>
 	<?php
 kstwitter();
 
@@ -100,7 +101,7 @@ function kstwitter() {
 	$tweet = preg_replace($twsearch, $twreplace, $tweet);
 	/*Print it out*/
 	print "<p class=\"tweet\">\"".fancytext($tweet)."\"</p>
-	  <p class=\"tweet-info\">- <a href=\"http://twitter.com/essentialemily\">@essentialemily on Twitter ".$tweetdate." at ".$tweettime."</a></p>";
+	  <p class=\"tweet-info\"> <a href=\"http://twitter.com/essentialemily\"> ".$tweetdate." at ".$tweettime."</a></p>";
 	}
 }
 
