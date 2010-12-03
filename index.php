@@ -153,47 +153,18 @@ function fancytext($text) {
 				</ul>
 			</li>
 
-			<li><h4>News Columns</h4>
+			<li><h4>Daily Reading</h4>
 				<ul>
 					<li><a href="http://news.discovery.com/">Discovery News</a></li>
 					<li><a href="http://www.wired.com/">Wired News</a></li>
+					<li><a href="http://www.engadget.com/">Engadget</a></li>
 					<li><a href="http://www.uptownupdate.com/">Uptown Update</a></li>
-				</ul>
-			</li>
-
-			<li><h4>TV Shows</h4>
-				<ul>
-					<li><a href="http://www.nbc.com/law-and-order-special-victims-unit/">Law and Order: SVU</a></li>
-					<li><a href="http://www.fox.com/house/">House</a></li>
-					<li><a href="http://abc.go.com/shows/castle">Castle</a></li>
-					<li><a href="http://dsc.discovery.com/tv/mythbusters/">MythBusters</a></li>
-					<li><a href="http://dsc.discovery.com/tv/man-woman-wild/">Man, Woman, Wild</a></li>
-					<li><a href="http://www.mylifetime.com/shows/project-runway">Project Runway</a></li>
-					<li><a href="http://www.bravotv.com/top-chef">Top Chef</a></li>
+					<li><a href="http://xkcd.com/">xkcd</a></li>
 				</ul>
 			</li>
 
 	<!--	knitting, sewing and music  -->
 
-			<li><h4>Board Games</h4>
-				<ul>
-					<li><a href="http://www.scrabble.com/">Scrabble</a></li>
-					<li><a href="http://www.daysofwonder.com/tickettoride/">Ticket to Ride</a></li>
-					<li><a href="http://www.wizards.com/roborally/">RoboRally</a></li>
-				</ul>
-			</li>
-
-			<li><h4>iPhone/Computer Games</h4>
-				<ul>
-					<li><a href="http://firemint.com/?page_id=565">Flight Control</a></li>
-					<li><a href="http://itunes.apple.com/us/app/shibuya/">Shibuya</a></li>
-					<li><a href="http://itunes.apple.com/us/app/cut-the-rope/">Cut the Rope</a></li>
-					<li><a href="http://itunes.apple.com/us/app/words-with-friends/">Words With Friends</a></li>
-					<li><a href="http://www.playauditorium.com/">Auditorium</a></li>
-					<li><a href="http://areacodeinc.com/drop7/">Drop7</a></li>
-					<li><a href="http://www.pegglefever.com/">Peggle</a></li>
-				</ul>
-			</li>
 		</ul>
 	</div>
 
