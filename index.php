@@ -1,4 +1,11 @@
-<?php require('simplepie.inc'); ?>
+<?php require('simplepie.inc');
+
+// Include WordPress - php used to pull in WordPress content courtesy of http://www.corvidworks.com/articles/wordpress-content-on-other-pages
+define('WP_USE_THEMES', false);
+require('./blog/wp-load.php');
+query_posts('showposts=3');
+
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
@@ -116,12 +123,17 @@ function fancytext($text) {
 		?>
     </div>		<!--	end of twitter feed  -->
 	<h3>Welcome</h3>
-		<p>And thanks for visiting the personal and professional website for Emily Sutherlin.  This site was developed during <a href="http://karlstolley.com">Karl Stolley</a>'s <a href="http://courses.karlstolley.com/530/CourseHome">"Standards-Based Web Design"</a> course at <a href="http://www.iit.edu/csl/hum/">IIT</a>. It is a constant work in progress, so please <a href="mailto:esutherl@iit.edu">email me</a> if you have any feedback, ideas, or words of advice! And...
+		<p>And thanks for visiting the personal and professional website for Emily Sutherlin.  This site was developed during <a href="http://karlstolley.com">Karl Stolley</a>'s <a href="http://courses.karlstolley.com/530/CourseHome">"Standards-Based Web Design"</a> course at <a href="http://www.iit.edu/csl/hum/">IIT</a>. It is a constant work in progress, so please <a href="mailto:esutherl@iit.edu">email me</a> if you have any feedback, ideas, or words of advice!
 		</p>
-
-	<h3>Come back soon when the blog is live!</h3>
 		<p>For now, feel free to peruse my site via the links at left, or check out some of my interests via the links on the right.</p>
 		<p>~Emily</p>
+
+<?php while (have_posts()): the_post(); // php used to pull in WordPress content courtesy of http://www.corvidworks.com/articles/wordpress-content-on-other-pages ?> 
+<h3><?php the_title(); ?></h3>
+<?php the_excerpt(); ?>
+<?php endwhile; ?>
+
+	<p><a href="http://www.emilysutherlin.com/blog">Read more...</a></p>
 
 	</div>
 
